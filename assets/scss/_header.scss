@@ -1,7 +1,7 @@
 .header {
   display: flex;
-  align-items: center;
-  justify-content: center;  
+  flex-direction: column-reverse; 
+  align-items: flex-start; 
   margin-bottom: 30px;
   font-size: 20px;
   @include breakpoint('small') {
@@ -16,6 +16,7 @@
   // }
 }
 
+
 .menu-main {
   display: none;
   flex: 0;
@@ -24,8 +25,8 @@
   }
   > ul {
     display: flex;
-    align-items: flex-end; 
-    flex-wrap: wrap;
+    align-items: stretch;
+  
 
     > li {
       margin-right: 15px;
