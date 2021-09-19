@@ -43,7 +43,10 @@ body {
   &.frame {
     min-height: 100vh;
     border: 50px solid; 
-    border-image: url("/images/kale-salad.jpg") 80 80 round;  
+    border-image: url("/images/kale-salad.jpg") 80 80 round; 
+    @include breakpoint('small'){
+      padding: 10px;
+    }
     
   }
 }
